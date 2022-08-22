@@ -143,11 +143,11 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
     }
 
     public static boolean readHideSpecialChars(final SharedPreferences prefs) {
-        return prefs.getBoolean(PREF_HIDE_SPECIAL_CHARS, false);
+        return prefs.getBoolean(PREF_HIDE_SPECIAL_CHARS, true);
     }
 
     public static boolean readShowNumberRow(final SharedPreferences prefs) {
-        return prefs.getBoolean(PREF_SHOW_NUMBER_ROW, false);
+        return prefs.getBoolean(PREF_SHOW_NUMBER_ROW, true);
     }
 
     public static boolean readSpaceSwipeEnabled(final SharedPreferences prefs) {
@@ -252,6 +252,6 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
     }
 
     public static boolean readUseMatchingNavbarColor(final SharedPreferences prefs) {
-        return prefs.getBoolean(PREF_MATCHING_NAVBAR_COLOR, false);
+        return prefs.getBoolean(PREF_MATCHING_NAVBAR_COLOR, true);
     }
 }

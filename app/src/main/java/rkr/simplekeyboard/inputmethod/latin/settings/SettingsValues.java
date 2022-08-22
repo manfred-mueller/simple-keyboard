@@ -29,7 +29,7 @@ import rkr.simplekeyboard.inputmethod.latin.RichInputMethodManager;
 
 // Non-final for testing via mock library.
 public class SettingsValues {
-    public static final float DEFAULT_SIZE_SCALE = 1.0f; // 100%
+    public static final float DEFAULT_SIZE_SCALE = .75f; // 75%
 
     // From resources:
     public final SpacingAndPunctuations mSpacingAndPunctuations;
@@ -70,7 +70,7 @@ public class SettingsValues {
         mInputAttributes = inputAttributes;
 
         // Get the settings preferences
-        mAutoCap = prefs.getBoolean(Settings.PREF_AUTO_CAP, true);
+        mAutoCap = prefs.getBoolean(Settings.PREF_AUTO_CAP, false);
         mVibrateOn = Settings.readVibrationEnabled(prefs, res);
         mSoundOn = Settings.readKeypressSoundEnabled(prefs, res);
         mKeyPreviewPopupOn = Settings.readKeyPreviewPopupEnabled(prefs, res);
