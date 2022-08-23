@@ -29,7 +29,7 @@
     <CheckBoxPreference
         android:key="pref_matching_navbar_color"
         android:title="@string/matching_navbar_color"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
     <rkr.simplekeyboard.inputmethod.latin.settings.SeekBarDialogPreference
         android:key="pref_keyboard_height"
         android:title="@string/prefs_keyboard_height_settings"
