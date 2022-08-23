@@ -9,6 +9,7 @@ android {
         targetSdkVersion 31
         versionCode 94
         versionName "5.9"
+        setProperty("archivesBaseName", "simple-keyboard-w3c-$versionName.$versionCode")
     }
     buildTypes {
         release {
